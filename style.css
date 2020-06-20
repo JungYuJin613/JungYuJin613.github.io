@@ -149,3 +149,29 @@ section.download .inner div{
 section.download{
     padding-top: 80px;
 }
+
+/* Footer Area */
+footer{}
+.links{
+    background-color: #ddd;
+}
+.links div{
+    /* border: 1px solid black; */
+    width: 1100px;
+    margin: auto;
+}
+.links div ul{
+    border: 1px solid black;
+    list-style: none;
+    padding-left: 0;
+    display: inline-block;
+    width: 19.5%;
+}
+.copyright{
+    background-color: #333;
+    color: #999;
+    text-align: center;
+    height: 50px;
+    font-size: 13px;
+    line-height: 50px;
+}
