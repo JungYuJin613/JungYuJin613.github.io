@@ -159,13 +159,23 @@ footer{}
     /* border: 1px solid black; */
     width: 1100px;
     margin: auto;
+    padding: 20px 0;
 }
 .links div ul{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     list-style: none;
     padding-left: 0;
     display: inline-block;
     width: 19.5%;
+    vertical-align: top;
+    text-transform: capitalize;
+}
+.links div ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.links div ul li a:hover{
+    color:#777;
 }
 .copyright{
     background-color: #333;
