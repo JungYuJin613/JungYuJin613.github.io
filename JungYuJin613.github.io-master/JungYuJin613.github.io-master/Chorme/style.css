@@ -12,9 +12,8 @@ body{
 }
 
 /* Common CSS */
-section{
+seciton{
     clear: both;
-    padding-top: 50px;
 }
 section .inner{
     width: 1100px;
