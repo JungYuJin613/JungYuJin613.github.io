@@ -38,7 +38,7 @@ section:nth-last-of-type(even){
 .download-spec span{
     display: block;
 }
-seciton h2{
+section h2{
     font-size: 36px;
     font-weight: normal;
 }
@@ -185,4 +185,49 @@ footer{}
     height: 50px;
     font-size: 13px;
     line-height: 50px;
+}
+
+/* Mobile CSS */
+@media (max-width: 768px){
+    header{
+        height: 50px;
+    }
+    header nav{
+        width: 100%;
+    }
+    .navi{
+        background-color: #000;
+    }
+    .navi a{
+        display: block;
+    }
+    section .inner{
+        width:100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    section .inner img{
+        width: 100%;
+    }
+    section.usage .sub_inner{
+        width: 100%;
+    }
+    section.usage .sub_inner div{
+        float: none;
+        width: 100%;
+    }
+    section.continue p,section.create p{
+        padding: 0;
+    }
+    section.welcome h1{
+        font-size: 36px;
+        line-height: 1.2em;
+    }
+    section h2{
+        font-size: 26px;
+        line-height: 1.2em;
+    }
+    footer .links{
+        display: none;
+    }
 }
