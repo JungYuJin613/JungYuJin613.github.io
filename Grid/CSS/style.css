@@ -161,12 +161,12 @@
     /* background-color:black; */
 }
 
-/*Yannick*/
+/* Autumn&Winter */
 
 .container>.Yannick>p:nth-child(1){
     grid-row: 1;
     grid-column: 1/ span 2;
-    background-color:#37432b;
+    background-color:#003d13;
     color:white;
     font-size: 74.53px;
     font-style: Arial;
@@ -180,7 +180,7 @@
 }
 
 .container>.Yannick>p:nth-child(3){
-    background-color:#596c46;
+    background-color:#1d612e;
     color:#ecf5e3;
     font-size: 38.25px;
     font-style: Georgia;
@@ -192,7 +192,7 @@
 }
 
 .container>.Yannick>p:nth-child(4){
-    background-color:#c7eca3;
+    background-color:#83a185;
     color:#1c2516;
     font-size: 36.07px;
     font-style: Georgia bold;
@@ -222,7 +222,7 @@
   }
 
   .container>.Yannick>p:nth-child(9){
-    background-color: #37432b;
+    background-color: #175836;
     font-style: Arial;
     font-size:24px;
     color:#dcead1;
@@ -232,7 +232,7 @@
 
 }
   .container>.Yannick>p:nth-child(10){
-      background-color: #37432b;
+      background-color: #1c621a;
       font-style: italic;
       font-size:34.62px;
       color:#e1d1ea;
@@ -254,7 +254,7 @@
     background-image: url("../images/pexels-brigitte-tohm-239584 (1).jpg");
 }
 .container>.Yannick>p:nth-child(12){
-    background-color: #37432b;
+    background-color: #0a4620;
     font-style: Arial;
     font-size:24px;
     color:#dcead1;
@@ -264,9 +264,9 @@
 
 }
 
-/*까뜨린*/
+/* Spring */
 .container>.Catherine>p:nth-child(1){
-    background-color: #803a58;
+    background-color: #f3d912;
     font-style: Garamond;
     font-size:44.57px;
     color:#ecf5e3;
@@ -298,6 +298,7 @@
 }
 .container>.Catherine>p:nth-child(7){
     background-image: url("../images/spring2.png");
+    background-size: cover;
 
 }
 .container>.Catherine>p:nth-child(6){
@@ -313,7 +314,7 @@
 
 }
 .container>.Catherine>p:nth-child(9){
-  background-color: #804a58;
+  background-color: #dda304;
   font-style: Garamond;
   font-size:34.2px;
   color:#ecf5e3;
@@ -334,7 +335,7 @@
 
 }
 
-/*제인패커 */
+/* Summer */
 
 .container> .jane > p:nth-child(1){
     grid-row: 1 / span 4;
