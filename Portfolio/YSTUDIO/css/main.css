@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{
+    margin:0;
+    padding:0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; 
+    font-size: inherit;
+}
+a {
+    color: inherit; 
+    text-decoration: inherit;
+}
+img {
+    vertical-align: middle;
+}
+a img {
+    border: none;
+}
+li {
+    list-style: none;
+}
+address, em, i {
+    font-style: normal;
+}
+a:focus {
+    outline: none
+}
+button:focus {
+    outline: none
+}
+
+/* Common CSS */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+header{
+    width: 100%;
+    padding-top: 30px;
+    position: fixed;
+    z-index: 100;
+}
+.innerHeader{
+    height: 80px;
+    padding: 0 80px;
+    line-height: 80px;
+}
+.logo{
+    width: 170px;
+    height: 60px;
+    float: left;
+    margin-right: 180px;
+}
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.logo a img{
+    width: 100%;
+}
+.logo a img:nth-child(2){
+    opacity: 0;
+}
+.introTxt{
+    float: left;
+    color: #fff;
+}
+.menuOpen{
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.menuOpen span{
+    margin-left: 15px;
+    font-size: 33px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -6px;
+}
+
+/* Visual */
+.visual{}
+.visual .slide{}
+.visual .slide li{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    position: relative;
+}
+.slide li img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+.slide li .txt{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 18px;
+}
+.slide li .txt h3{
+    font-size: 64px;
+    margin: 30px 0;
+}
+.slide li .txt a{
+    display: inline-block;
+}
+.slide li .txt a span{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.slide li .scroll{
+    position: absolute;
+    left: 50px;
+    bottom: 10%;
+    transform: rotate(-90deg);
+    color: #ccc;
+    font-weight: bold;
+}
+
+/* Contents Common CSS */
+.contents{
+    background-color: #1b1b1b;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+/* Contents mainTxt */
+.mainTxt{
+    width: 1170px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.mainTxt:after{
+    content: '”';
+    font-size: 300px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+.mainTxt:before{
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffec03;
+    position: absolute;
+    left: 65px;
+    top: 110px;
+}
+.mainTxt h3{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2em;
+    float: left;
+    width: 30%;
+}
+.mainTxt p{
+    float: right;
+    width: 70%;
+    font-size: 25px;
+    line-height: 1.4em;
+}
+.mainTxt p span{
+    display: block;
+    margin-top: 60px;
+    font-size: 20px;
+    color: #999;
+    font-weight: 400;
+}
+
+/* Contents Project  */
+.project{
+    color: #fff;
+}
+.project .top{
+    width: 1170px;
+    margin: 130px auto 60px;
+    height: 90px;
+    background-color: red;
+}
+.project .top h3{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.3em;
+    float: left;
+}
+.project .top a{
+    float: right;
+    font-size: 18px;
+    display: block;
+}
+.project .top span{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.project ul{
+    clear: both;
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+}
+.project ul li{
+    flex: 1;
+}
+.project li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.project .name{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #1b1b1b;
+    padding: 15px;
+} 
