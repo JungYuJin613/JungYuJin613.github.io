@@ -257,3 +257,104 @@ header{
     transition: all 1s;
     transform: scale(1.2);
 }
+
+/* Contents Partner */
+.partner{
+    width: 1170px;
+    margin: 120px auto;
+    color: #fff;
+}
+.partner h3{
+    font-size: 17px;
+    font-weight: 400;
+}
+.partner ul{
+    overflow: hidden;
+}
+.partner li{
+    float: left;
+    width: 29%;
+    height: 100px;
+    margin-top: 80px;
+    text-align: center;
+}
+.partner li:nth-child(1),
+.partner li:nth-child(5){
+    width: 21%;
+    text-align: left;
+}
+.partner li:nth-child(4n){
+    width: 21%;
+    text-align: right;
+}
+.partner img{
+    display: inline-block;
+    opacity: 0.4;
+    transition: all 0.3s;
+}
+.partner li:hover img{
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+/* Contents Contact */
+.contact{
+    width: 100%;
+    background: url('../img/contact.jpg') no-repeat;
+    background-size: 90%;
+    background-position: left;
+    background-attachment: fixed;
+    padding: 190px 0;
+    color: #fff;
+    position: relative;
+}
+.inner{
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.3em;
+}
+.inner h3{
+    font-weight: 400;
+}
+.inner .tel{
+    margin: 50px 0;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer{
+    background-color: #1b1b1b;
+    color: #999;
+    padding:  0 80px 80px;
+    position: relative;
+}
+footer ul{
+    display: flex;
+}
+footer li{
+    flex: 1;
+}
+footer li:nth-child(2){
+    color: #eee;
+    font-size: 16px;
+    line-height: 2em;
+}
+footer li:nth-child(2) span{
+    font-weight: bold;
+    color: #999;
+}
+footer li:nth-child(3){
+    font-weight: bold;
+}
+
+/* gototop */
+.gototop{
+    font-size: 48px;
+    color: #fff;
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+}
+    
