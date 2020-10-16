@@ -200,7 +200,6 @@ header{
     width: 1170px;
     margin: 130px auto 60px;
     height: 90px;
-    background-color: red;
 }
 .project .top h3{
     font-size: 35px;
@@ -231,11 +230,30 @@ header{
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
-.project .name{
+.name{
     position: absolute;
     right: 0;
     bottom: 0;
     background-color: #1b1b1b;
     padding: 15px;
+    width: 270px;
+    text-align: right;
+    font-size: 22px;
+    box-sizing: border-box;
 } 
+.name span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.name h3{
+    text-transform: uppercase;
+}
+.project img{
+    transition: all 0.5s;
+}
+.project a:hover img{
+    transition: all 1s;
+    transform: scale(1.2);
+}
