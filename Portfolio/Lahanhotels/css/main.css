@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR:wght@300;700&family=Unna&display=swap');
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; 
+    font-size: inherit;
+}
+img {
+    vertical-align: middle;
+}
+a img {
+    border: none;
+}
+li {
+    list-style: none;
+}
+address, em, i {
+    font-style: normal;
+}
+a:focus {
+    outline: none
+}
+button:focus {
+    outline: none
+}
+
+
+/* Layout */
+body{
+   font-family: 'Noto Sans KR', sans-serif;
+   background-color: #ddd;
+   font-size: 14px;
+   color: #000;
+   line-height: 1.4em;
+}
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.en{
+    font-family: 'Unna', serif;
+}
+.en_1{
+    font-family: 'Maven Pro', sans-serif; 
+}
+
+/* Header */
+header{
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s;
+}
+.menuOpen{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 16px;
+    line-height: 100px;
+}
+.menuOpen span{
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menuOpen span.mid{
+    top: 50%;
+}
+.menuOpen span.bot{
+    top: 100%;
+}
+.book{
+    display: inline-block;
+    float: left;
+    margin-left: 70px;
+    height: 100%;
+    font-size: 25px;
+}
+.langs{
+    float: left;
+    margin-left: 220px;
+    overflow: hidden;
+    width: 150px;
+}
+.langs li{
+    float: left;
+    width: 50%;
+}
+.langs li:nth-child(1){
+    font-weight: bold;
+}
+.langs li:nth-child(2){
+    color: #ddd;
+}
+.langs li a{
+    display: block;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.right{
+    float: right;
+}
+.right li{
+    float: left;
+    margin-left: 55px;
+}
+.right li p{
+    letter-spacing: 1px;
+}
+.right li .logo{
+    width: 150px;
+    height: 100px;
+}
+.right li .logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.right li .logo a img{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.right li .logo a img:nth-child(2){
+    opacity: 0;
+}
+
+/* Visual */
+.visual{
+    color: #fff;
+}
+.visual .slide li{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.slide img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.slide .mainTxt{
+    position: absolute;
+    top: 35%;
+    right: 18%;
+    width: 25%;
+}
+.mainTxt strong{
+    display: block;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.mainTxt > p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.8em;
+    margin-bottom: 70px;
+}
+.mainTxt .num{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.mainTxt .num span{
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    padding: 10px 4px;
+    opacity: 0;
+}
+.mainTxt .message{
+    font-size: 26px;
+    line-height: 1.2em;
+}
+
+/* Visual Common Menu */
+.menu{
+    position: absolute;
+    left: 4%;
+    bottom: 7%;
+    font-size: 21px;
+    padding-bottom: 7px;
+    overflow: hidden;
+}
+.menu:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    animation: bar 4.5s infinite;
+}
+@keyframes bar{
+    0%{
+        width: 0%;
+    }
+}
+.menu li{
+    float: left;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}
+.menu li:nth-child(2){
+    padding-right: 130px;
+}
+.menu li:nth-child(3){
+    padding-right: 0;
+}
+.menu span i{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.menu li:nth-child(2) i{
+    margin-right: 22px;
+}
+.menu p{
+    font-size: 28px;
+}
