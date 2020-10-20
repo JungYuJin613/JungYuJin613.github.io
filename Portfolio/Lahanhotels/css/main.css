@@ -38,7 +38,6 @@ button:focus {
     outline: none
 }
 
-
 /* Layout */
 body{
    font-family: 'Noto Sans KR', sans-serif;
@@ -70,7 +69,6 @@ header{
     z-index: 100;
     position: fixed;
     top: 0;
-    transition: all 0.5s;
 }
 .menuOpen{
     display: inline-block;
@@ -215,6 +213,7 @@ header{
     font-size: 21px;
     padding-bottom: 7px;
     overflow: hidden;
+    width: 30%;
 }
 .menu:after{
     content: '';
@@ -252,4 +251,59 @@ header{
 }
 .menu p{
     font-size: 28px;
+}
+
+/* Animation */
+@keyframes trans{
+    0%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+}
+.slick-active .mainTxt .num span{
+    animation: trans;
+    animation-duration: 4.5s;
+}
+@keyframes opa{
+    0%{
+        opacity: 0;
+    }
+}
+.slick-active .mainTxt strong{
+    animation-name: opa;
+    animation-duration: 2s;
+}
+@keyframes slide-up{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+.slick-active .mainTxt > p{
+    animation-name: slide-up;
+    animation-duration: 1.5s;
+}
+@keyframes scaleani{
+    0%{
+        transform: scale(1.1);
+    }
+}
+.slide .slick-active img{
+    animation-name: scaleani;
+    animation-duration: 4.5s;
 }
