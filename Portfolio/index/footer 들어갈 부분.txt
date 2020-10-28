@@ -1,0 +1,5 @@
+* 포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다.
+개인적인 작업물로 해당기업과는 관련 없습니다.
+Copyright ⓒ 2020 by JUNG YUJIN. All Rights Reserved
+
+This site is a Private Project
