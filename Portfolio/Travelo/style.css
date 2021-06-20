@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  font-size: 15px;
+  margin: 0;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+/* Reset CSS */
+a{
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5{
+  margin: 0;
+  font-weight: 500;
+}
+input,button,textarea{
+  outline: none;
+}
+button{
+  cursor: pointer;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Common CSS */
+.inner{
+  width: 1300px;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+/* Header */
+header{
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 2;
+}
+nav{
+  /* border: 5px solid red; */
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.logo{}
+.gnb{
+  display: flex;
+}
+.gnb li{}
+.gnb li a{
+  margin: 20px;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+.gnb li a:hover{
+  color: #333;
+}
+.gnb li a:last-child{
+  margin-right: 0;
+}
+.trigger{
+  display: none;
+}
+
+/* Header with active class */
+header.active{
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  
+}
+header.active .gnb li a{
+  color: #000;
+}
+header.active nav{
+  padding-bottom: 20px;
+}
+
+.gototop{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 10px;
+  opacity: 0;
+  bottom: -20px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  background: linear-gradient(45deg, skyblue,#c1e4f2);
+  transition: 0.5s;
+}
+.gototop.active{
+  opacity: 1;
+  bottom: 20px;
+}
+
+
+/* Intro Section */
+.intro{
+  /* border: 1px solid blue; */
+  height: 100vh;
+  background: url('images/intro.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* flex로 수직중앙, inner로 수평중앙 */
+}
+.heading {
+  color: #fff;
+  text-align: center;
+}
+.heading h1{
+  font-size: 70px;
+  /* border: 3px solid blue; */
+  margin-bottom: 40px;
+}
+.heading p{
+  font-size: 22px;
+  line-height: 1.5em;
+  padding: 0 100px;
+}
+
+/* About Section */
+.about-content{
+  /* border: 5px solid #000; */
+  display: flex;
+  padding: 150px 0;
+}
+.about-content div{
+  padding: 30px;
+}
+.desc{
+  text-align: center;
+  flex: 3;
+}
+.desc h2{
+  font-size: 30px;
+  font-family: 'Nothing You Could Do', cursive;
+  margin-bottom: 30px;
+}
+.desc p{
+  font-size: 16px;
+  line-height: 1.7em;
+}
+.desc a{
+  color: #FF4A52;
+  font-weight: bold;
+}
+.desc a:hover{
+  text-decoration: underline;
+}
+.photo{
+  flex: 2;
+}
+.photo img{
+  width: 100%;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+}
+/* Destination Section */
+.Destination{
+  background-color: #f8f8f8;
+}
+.Destination-content{
+  padding: 100px 0;
+  /* border: 1px solid #000; */
+}
+.Destination-content h2{
+  font-family: 'Rubik', sans-serif;
+  color: #040E27;
+  font-size: 30px;
+  font-weight: 690;
+  margin-bottom: 50px;
+}
+.items{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+.item{
+  width: 390px;
+  height: 600px;
+  /* border: 1px solid blue; */
+  border-radius: 30px 0 30px 0;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+.up-image{
+  width: 390px;
+  height: 285px;
+  /* border: 1px solid red; */
+}
+.up-image img{
+  width: 100%;
+  /* height: 100%; */
+}
+.down-desc{
+  padding: 25px;
+  padding-top: 50px;
+  font-family: 'Rubik', sans-serif;
+}
+.down-desc h3{
+  font-size: 24px;
+  margin: 15px 0;
+}
+.down-desc p{
+  font-size: 16px;
+}
+.btn-explore{
+  color: #FF4A52;
+  font-weight: 500;
+}
+.btn-explore img{
+  transition: 0.3s;
+}
+.btn-explore:hover img{
+  transform: translateX(15px);
+}
+.badge{
+  background-color:#FF4A52;
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 16px;
+}
+.badge.good{
+  background-color: #1EC6B6;
+}
+
+/* Testimonial Section */
+.testimonial{
+  padding: 100px 0;
+}
+.testimonial-content{
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+.testimonial-content h2{
+  color: #040E27;
+  font-size: 38px;
+}
+.testimonial-content hr{
+  border: none;
+  height: 4px;
+  width: 100px;
+  background-color: #1EC6B6;
+  margin: 30px auto;
+}
+.myslider{
+  /* border: 1px solid red; */
+}
+.myslider div{
+  /* border: 1px solid blue; */
+}
+.client{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client img{
+  width: 85px;
+  border-radius: 50%;
+  margin-right: 15px;
+  
+}
+.client span{
+  /* border: 1px solid #000; */
+  display: block;
+  /* width: 100%; */
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7em;
+}
+.client span b{
+  display: block;
+}
+.comment{
+  font-size: 16px;
+  line-height: 1.6em;
+  padding-right: 25px;
+}
+
+/* Newsletter Section */
+.Newsletter{
+  /* border: 5px solid #000; */
+  height: 450px;
+  background: url('images/newsletter.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Newsletter-heading{
+  text-align: center;
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+}
+.Newsletter-heading h2{
+  color: #fff;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 1.2em;
+  /* margin-bottom: 50px; */
+}
+.Newsletter:after{
+  content: '';
+  background-color: #040E27;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+.Newsletter-heading p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #AAB1B7;
+  margin-bottom: 50px;
+}
+.Newsletter-heading a{
+  background-color: #FF4A52;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+.Newsletter-heading a:hover{
+  background-color: #1EC6B6 ;
+}
+/* Blog Section */
+.blog{
+  padding: 100px 0;
+}
+.post-content{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.post-content div{
+  /* border: 1px solid blue; */
+}
+.recent-trips-items{
+  flex: 2;
+  margin-right: 50px;
+}
+.recent-trips-items h6, 
+.popular-places-items h6{
+  font-size: 24px;
+  color: #040E27;
+  font-weight: 500;
+  margin: 0 0 50px 0;
+}
+.popular-places-items{
+  width: 360px;
+}
+.popular-places-items .post-desc{
+  margin-top: 20px;
+}  
+.post-item{
+  display: flex;
+}
+.popular-places-items .post-item{
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.post-item div{}
+.post-image{
+  width: 360px;
+  /* flex: 2; */
+  border-radius: 30px 0 30px 0;
+  overflow: hidden;
+}
+.post-image img{
+  width: 100%;
+}
+.post-desc{
+  flex: 3;
+  padding: 0 20px;
+}
+.popular-places-items .post-desc{
+  padding: 0;
+}
+.post-desc h3{
+  font-size: 22px;
+}
+.post-desc p{
+  font-size: 18px;
+  line-height: 1.6em;
+}
+.post-desc p span{
+  font-size: 14px;
+  color: #7A838B;
+  margin-top: 20px;
+}
+hr.divider{
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 50px 0;
+}
+.post-content hr.divider{
+  margin: 30px 0;
+}
+
+/* Footer */
+footer{
+  background-color: #212529;
+  padding: 30px 0;
+}
+.footer-content{
+  display: flex;
+}
+.footer-content ul{
+  /* border: 1px solid #fff; */
+  text-align: center;
+}
+.footer-content ul li{
+  line-height: 36px;
+}
+.footer-content ul li:first-child{
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+}
+.footer-content ul li a{
+  color: #AAB1B7;
+}
+.footer-content ul li a:hover{
+  color: #FF4A52;
+}
+.company{
+  flex: 1;
+}
+.popular{
+  flex: 1;
+}
+.contact{
+  flex: 2;
+  
+}
+.contact li {
+  color: #AAB1B7;
+  line-height:  26px;
+}
+.contact li:last-child{
+  margin-top: 25px;
+  color: #7A838B;
+}
+
